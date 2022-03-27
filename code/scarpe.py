@@ -68,7 +68,7 @@ def write_docs_to_jsonl(docs, path):
 
     with open(path, "w+", encoding="utf-8") as file:
         for doc in docs:
-            file.write(json.dumps(json.dumps(doc) + "\n"))
+            file.write(json.dumps(doc) + "\n")
 
 
 BASE_DIR = "artifacts"
